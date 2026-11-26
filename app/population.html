@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People — America in Numbers</title>
+<meta name="description" content="United States population: ten-year trend, age structure and the ten largest states, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">America <span class="accent">in Numbers</span></div>
+    <p class="tagline">National Statistics Explorer · United States of America</p>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="index.html">Overview</a>
+      <a href="population.html" class="active" aria-current="page">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="society.html">Society &amp; Living</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>People: 340.1 million and growing</h1>
+  <p class="lede">The United States counted 340.1 million residents in 2024, up from 320.7
+  million in 2015. Growth slowed in the late 2010s, then picked up again in
+  2023–2024 as immigration estimates were revised upward.</p>
+
+  <section class="card">
+    <h2>Population, 2015–2024</h2>
+    <div class="chart" id="pop-chart"></div>
+    <p class="source">Source: U.S. Census Bureau, Vintage 2024 estimates. The 2024 jump
+    reflects revised immigration estimates.</p>
+  </section>
+
+  <section class="card">
+    <h2>How old is America?</h2>
+    <div class="chart" id="age-chart"></div>
+    <p class="source">Age structure, 2023. Source: U.S. Census Bureau. Median age: 38.9 years.
+    About 17.7% of the population is 65 or older, and 21.9% is under 18.</p>
+  </section>
+
+  <section class="card">
+    <h2>The ten largest states</h2>
+    <p>California alone holds more people than Canada. Click a column heading
+    to sort the table; type to filter by state name.</p>
+    <div class="filter-row">
+      <label for="state-filter">Filter states:</label>
+      <input type="search" id="state-filter" placeholder="Type a state name…">
+      <span class="count" id="states-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="states-table">
+        <thead>
+          <tr>
+            <th data-sort="rank" aria-sort="ascending">#</th>
+            <th data-sort="name">State</th>
+            <th data-sort="pop" class="num">Population (millions)</th>
+            <th class="num">Share of the U.S.</th>
+          </tr>
+        </thead>
+        <tbody id="states-body"></tbody>
+      </table>
+    </div>
+    <p class="source" id="states-empty" hidden>No state matches that filter.</p>
+    <p class="source">Source: U.S. Census Bureau, 2024 population estimates. Shares are
+    computed from the 340.1 million national total.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Figures updated November 2026. Sources: U.S. Census Bureau. America in Numbers is an
+    independent explorer, not affiliated with any government agency.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

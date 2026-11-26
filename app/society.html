@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Society &amp; Living — America in Numbers</title>
+<meta name="description" content="How Americans live: household income, poverty, health insurance, education and life expectancy, 2023 versus 2025.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">America <span class="accent">in Numbers</span></div>
+    <p class="tagline">National Statistics Explorer · United States of America</p>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="index.html">Overview</a>
+      <a href="population.html">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="society.html" class="active" aria-current="page">Society &amp; Living</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Society &amp; living: how Americans are doing</h1>
+  <p class="lede">Income, poverty and health coverage move slowly — but they move. Switch
+  between 2023 and 2025 below to see what changed in two years: median income
+  rose by nearly $7,000, and the poverty rate fell.</p>
+
+  <section class="card">
+    <h2>Living standards by year</h2>
+    <div class="toggle" role="group" aria-label="Choose a year">
+      <button type="button" data-year="2023">2023</button>
+      <button type="button" data-year="2025" class="active">2025</button>
+    </div>
+    <div class="kpi-grid" id="society-grid"></div>
+    <p class="source">Income, poverty and uninsured figures: U.S. Census Bureau. Education:
+    American Community Survey 2023. Median age: U.S. Census Bureau 2023.
+    Births: CDC 2023.</p>
+  </section>
+
+  <section class="card">
+    <h2>Health and long life</h2>
+    <ul class="facts">
+      <li><span>Life expectancy at birth <span class="fact-source">World Bank, 2024</span></span><span class="fact-value">78.9 years</span></li>
+      <li><span>Life expectancy at birth <span class="fact-source">CDC, 2023</span></span><span class="fact-value">78.4 years</span></li>
+      <li><span>Without health insurance <span class="fact-source">U.S. Census Bureau, 2025</span></span><span class="fact-value">7.9%</span></li>
+      <li><span>High-school diploma or higher, age 25+ <span class="fact-source">American Community Survey, 2023</span></span><span class="fact-value">91.1%</span></li>
+    </ul>
+    <p class="source">Life expectancy fell during the pandemic, then rebounded: 78.4 years
+    in 2023 and 78.9 in 2024, above the pre-pandemic level of 78.8 in 2019.</p>
+  </section>
+
+  <section class="card">
+    <h2>Reading the numbers</h2>
+    <p>Median household income is the income of the household in the middle —
+    half of households earn more, half earn less. The poverty rate counts
+    people whose income falls below the federal poverty threshold. Both come
+    from the Census Bureau's annual income and poverty release, usually
+    published each September.</p>
+    <p><a href="data.csv">Download the figures as CSV</a> to work with the
+    underlying series yourself.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Figures updated November 2026. Sources: U.S. Census Bureau, CDC, World Bank, American
+    Community Survey. America in Numbers is an independent explorer, not affiliated with any
+    government agency.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>America in Numbers — National Statistics Explorer</title>
+<meta name="description" content="Key national statistics for the United States: population, GDP, jobs, income and living standards, with source and year for every figure.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">America <span class="accent">in Numbers</span></div>
+    <p class="tagline">National Statistics Explorer · United States of America</p>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="index.html" class="active" aria-current="page">Overview</a>
+      <a href="population.html">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="society.html">Society &amp; Living</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>The United States at a glance</h1>
+  <p class="lede">The headline numbers for the United States — how many people live here,
+  how much the economy produces, and how people live. Every figure names its
+  source and year, so you can check it and cite it.</p>
+
+  <div class="kpi-grid" id="kpi-grid"></div>
+
+  <section class="card">
+    <h2>A decade of change, 2015–2024</h2>
+    <div class="toggle" role="group" aria-label="Choose a series">
+      <button type="button" data-metric="population" class="active">Population</button>
+      <button type="button" data-metric="gdp">GDP</button>
+      <button type="button" data-metric="unemployment">Unemployment</button>
+    </div>
+    <div class="chart" id="trend-chart"></div>
+    <p class="source" id="trend-footnote"></p>
+  </section>
+
+  <section class="card">
+    <h2>Numbers worth knowing</h2>
+    <ul class="facts">
+      <li><span>Median age of the population</span><span class="fact-value">38.9 years</span></li>
+      <li><span>Births in a year</span><span class="fact-value">3.60 million</span></li>
+      <li><span>Federal debt</span><span class="fact-value">$36.2 trillion</span></li>
+      <li><span>Median existing-home price</span><span class="fact-value">$419,200</span></li>
+      <li><span>Exports of goods and services</span><span class="fact-value">$3.24 trillion</span></li>
+      <li><span>Imports of goods and services</span><span class="fact-value">$4.12 trillion</span></li>
+    </ul>
+    <p class="source">Sources: U.S. Census Bureau (2023–2024), CDC (2023), U.S. Treasury (Dec 2024),
+    National Association of Realtors (Q4 2024), Bureau of Economic Analysis (2024, revised June 2026).
+    See the People, Economy and Society pages for the full breakdowns.</p>
+  </section>
+
+  <section class="card">
+    <h2>Take the figures with you</h2>
+    <p><a href="data.csv">Download the figures as CSV</a> — the population, GDP and
+    unemployment series and the ten largest states, ready for a spreadsheet.</p>
+    <p class="source">America in Numbers is an independent explorer built from public
+    statistics. It is not affiliated with any government agency.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Figures updated November 2026. Sources: U.S. Census Bureau, Bureau of Economic Analysis,
+    Bureau of Labor Statistics, World Bank, CDC and the U.S. Treasury.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

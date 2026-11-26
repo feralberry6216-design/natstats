@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — America in Numbers</title>
+<meta name="description" content="United States economy: GDP, GDP per person, inflation, federal debt and trade in 2024, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">America <span class="accent">in Numbers</span></div>
+    <p class="tagline">National Statistics Explorer · United States of America</p>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="index.html">Overview</a>
+      <a href="population.html">People</a>
+      <a href="economy.html" class="active" aria-current="page">Economy</a>
+      <a href="society.html">Society &amp; Living</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Economy: a $29.3 trillion economy</h1>
+  <p class="lede">The United States has the world's largest economy. Output grew from
+  $18.2 trillion in 2015 to $29.3 trillion in 2024 — with a brief dip in 2020
+  during the pandemic, then the fastest growth in decades.</p>
+
+  <section class="card">
+    <h2>Gross domestic product, 2015–2024</h2>
+    <div class="toggle" role="group" aria-label="Choose how to show GDP">
+      <button type="button" data-gdp-mode="total" class="active">Total GDP</button>
+      <button type="button" data-gdp-mode="per-person">Per person</button>
+    </div>
+    <div class="chart" id="gdp-chart"></div>
+    <p class="source" id="gdp-caption"></p>
+  </section>
+
+  <section class="card">
+    <h2>Money, prices and debt</h2>
+    <ul class="facts">
+      <li><span>GDP per person, 2024 <span class="fact-source">World Bank</span></span><span class="fact-value">$86,170</span></li>
+      <li><span>Consumer price inflation, 2024 <span class="fact-source">Bureau of Labor Statistics</span></span><span class="fact-value">2.9%</span></li>
+      <li><span>Unemployment, 2024 average <span class="fact-source">Bureau of Labor Statistics</span></span><span class="fact-value">4.0%</span></li>
+      <li><span>Federal debt, Dec 2024 <span class="fact-source">U.S. Department of the Treasury</span></span><span class="fact-value">$36.2T</span></li>
+      <li><span>Median existing-home price, Q4 2024 <span class="fact-source">National Association of Realtors</span></span><span class="fact-value">$419,200</span></li>
+      <li><span>Homeownership rate, Q4 2024 <span class="fact-source">U.S. Census Bureau</span></span><span class="fact-value">65.7%</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Trade with the world</h2>
+    <ul class="facts">
+      <li><span>Exports of goods and services</span><span class="fact-value">$3.24T</span></li>
+      <li><span>Imports of goods and services</span><span class="fact-value">$4.12T</span></li>
+      <li><span>Trade deficit (goods and services)</span><span class="fact-value">$0.89T</span></li>
+    </ul>
+    <p class="source">All trade figures for 2024. Source: Bureau of Economic Analysis,
+    revised June 2026. The goods deficit alone was $1.21 trillion, partly
+    offset by a $0.33 trillion surplus in services.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Figures updated November 2026. Sources: Bureau of Economic Analysis, Bureau of Labor
+    Statistics, World Bank, U.S. Treasury, National Association of Realtors, U.S. Census Bureau.
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
